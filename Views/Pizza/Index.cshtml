@@ -1,0 +1,30 @@
+﻿
+    @model List<Pizza>
+
+
+<div class="text-center">
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Ingredienti</th>
+                <th>Immagine</th>
+                <th>Prezzo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Pizza pizza  in Model)
+            {
+                <tr>
+                    <td>@pizza.Name</td>
+                    <td>@pizza.Description</td>
+                    <td><img src="@pizza.Image" /></td>
+                    <td>@pizza.Price €</td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</div>
